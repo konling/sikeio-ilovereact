@@ -42,7 +42,7 @@ section container a {padding: 20px;}
 /*background-color: rgba(255,0,0,0.3); */
 
 /**-------------第三个页面-----------*/
-.swype-demo{  flex-grow: 1; align-self: stretch; flex-basis: 0;justify-content:center;}
+.swype-demo{  flex-grow: 1; align-self: stretch; flex-basis: 0; justify-content:center; padding: 10px}
 
 
 
