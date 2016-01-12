@@ -5,14 +5,7 @@
 */
 
 @import "normalize.css";
-body, html {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  background-color: rgba(255,255,188,0.3);
-}
+body, html {width: 100%; height: 100%;}
 
 body, div, span {
   box-sizing: border-box;
@@ -23,9 +16,34 @@ body, div, span {
   align-items: stretch;
   flex-shrink: 0;
   align-content: flex-start;
-
   border: 0 solid black;
   margin: 0;
   padding: 0;
 }
+body {  background-color: #1F1E34; color: #FFF;font-family: "Avenir Next","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,Arial, "Lucida Grande", sans-serif;font-weight: 100;}
+h1 {  font-size: 64px; font-weight: 100;  }
+h2 {  font-size: 48px;font-weight: 100; }
+p {  font-size: 24px; }
+a {  font-weight: 400;  color: #FFF; padding: 10px; }
+a:hover {  font-weight: 400;  color: #DADADA;  text-decoration: none; }
+
+.red { align-self: flex-start;}
+
+/*---------------------------------------调试-红色半透-------------------------------------------------------------------*/
+.test { background-color: rgba(255,0,0,0.3); border: 2px solid #FFF;}
+.section {    width: 100%; height: 100%; align-items: center; justify-content:center;}
+.container {  flex-direction: row;  align-items: center;  justify-content: center;  }
+section container a {padding: 20px;}
+
+/**-------------第二个页面-----------*/
+.second-flag{ flex-direction: row; }
+.iphone-demo{  flex-grow: 1; align-self: stretch; flex-basis: 0;justify-content:center;}
+.feature-description{ flex-grow: 1; align-self: stretch; flex-basis: 0; justify-content:center;}
+/*background-color: rgba(255,0,0,0.3); */
+
+/**-------------第三个页面-----------*/
+.swype-demo{  flex-grow: 1; align-self: stretch; flex-basis: 0;justify-content:center;}
+
+
+
 
