@@ -14,23 +14,33 @@
 </head>
 <body>
     <!--1-page-->
-    <div class="section ">
+    <div id="intro-section" class="section ">
+ 
+
         <img class="react-logo" src="img/react-logo.svg"/>
-        <h1>Build Native Apps With React</h1>
+        <div class="overlay"></div>
+
+        <div><h1 >Build Native Apps With React</h1></div>
         <div class="container " >
             <a href="#native">Native iOS </a>
             <a href="#touch">Touch Handling</a>
             <a href="#async">Asynchronous</a>
             <a href="#flex">Flex &amp; Styling</a>
         </div>
+        
     </div>
     <!--1-page-->
 
     <!--2-page-->
-    <div class="section second-flag">
+    <div class="section flex-direction-row">
+
         <div class="iphone-demo">
-            <img src="img/iphone-frame.svg"/>
+            <div class = "iphone-image"> 
+                <img class="iphone-frame-image" src="img/iphone-frame.svg"/>
+                <img class="screen-image" src="img/tumblr-demo.jpg"/>
+            </div>
         </div>
+        
         <div class="feature-description ">
              <h2>Native Experience</h2>
               <p>
@@ -38,14 +48,22 @@
                 and keeps the quality bar high.
               </p>
         </div>    
+
     </div>
     <!--2-page-->
     
     <!--3-page-->
-    <div class="section second-flag">
+    <div class="section  flex-direction-row">
         <div class="swype-demo">
-            <img src="img/android-robot.svg"/>
+            
+            <div class = "swype-image"> 
+                    <img src="img/iphone-frame.svg"/>
+                    <img class="screen-image"  src="img/swype-demo.jpg"/>
+            </div>           
+            
+            
         </div>
+
         <div class="feature-description ">
              <h2>Touches & Gesetures</h2>
               <p>
@@ -62,6 +80,11 @@
             <h1>Android Is Here</h1>
     </div>
     <!--4-page-->
+    <!--adnroid-robot-->
+    
+    <img  id="android-robot" src="img/android-robot.svg"/>
+    
+    <!--adnroid-robot-->
        
 </body>
 </html>

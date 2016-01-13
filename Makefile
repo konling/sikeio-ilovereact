@@ -10,3 +10,5 @@ css:
 .PHONY: clean
 clean:
 	rm -r bundle
+all:
+	 make server & make css & wait
