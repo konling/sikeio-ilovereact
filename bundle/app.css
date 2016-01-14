@@ -471,13 +471,32 @@ a:hover {  font-weight: 400;  color: #DADADA;  text-decoration: none; }
 .test { background-color: rgba(255,0,0,0.3); border: 2px solid #FFF;}
 /*----------------test--------------------------------------*/
 
+/*-----------------------------------------slider-control-----------------------------------------------------------------*/
+
+/*
+left: 100%; bottom: 50%; transform:translate(-100%,-50%);
+*/
+#slider-control {  padding: 3px; position: fixed;  
+  z-index: 255;
+  right: 10px;
+  top: 50%;
+  margin-top: -47px;
+}
+#slider-control a {  padding: 3px;}
+#slider-control .dot {  width: 16px;  height: 16px;  border: 1px solid #fff;  border-radius: 8px;}
+#slider-control .active .dot {  background-color: #fff;}
+
+
 /*---------------------------------------first-page-------------------------------------------------------------------*/
-.section {    width: 100%; height: 100%; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack:center; -webkit-justify-content:center; -ms-flex-pack:center; justify-content:center;}
+.section { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;   width: 100%; height: 100%; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack:center; -webkit-justify-content:center; -ms-flex-pack:center; justify-content:center;}
+#intro-section {  background-image: url(../img/background.jpg); background-size: cover; background-position: center; }
+.overlay{position: absolute; top: 0; left: 0; width: 100%; height: 100%;  background-image: -webkit-linear-gradient(rgba(0,0,0,0), rgba(31,30,52,1));  background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));}
 .container {  -webkit-box-orient: horizontal;  -webkit-box-direction: normal;  -webkit-flex-direction: row;  -ms-flex-direction: row;  flex-direction: row;  -webkit-box-align: center;  -webkit-align-items: center;  -ms-flex-align: center;  align-items: center;  -webkit-box-pack: center;  -webkit-justify-content: center;  -ms-flex-pack: center;  justify-content: center;  }
+.react-logo{  z-index: 255;   display: -webkit-box;   display: -webkit-flex;   display: -ms-flexbox;   display: flex; top: 20px;}
 .section .container a {padding: 5px;}
-#intro-section {  background-image: url(../img/background.jpg); background-size: cover; background-position: center;}
-.overlay{    position: absolute; top: 0; left: 0; width: 100%; height: 100%;  background-image: -webkit-linear-gradient(rgba(0,0,0,0), rgba(31,30,52,1));  background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));}
+
  
+
 /**-------------第二个页面-----------*/
 .flex-direction-row{ -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
 .iphone-demo{  -webkit-box-flex: 1;  -webkit-flex-grow: 1;  -ms-flex-positive: 1;  flex-grow: 1; -webkit-align-self: stretch; -ms-flex-item-align: stretch; align-self: stretch; -webkit-flex-basis: 0; -ms-flex-preferred-size: 0; flex-basis: 0;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center; }
@@ -485,7 +504,7 @@ a:hover {  font-weight: 400;  color: #DADADA;  text-decoration: none; }
 .screen-image {  position: absolute;  top: 90px;  left: 25px;}
 
 
-.feature-description{ -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-align-self: stretch; -ms-flex-item-align: stretch; align-self: stretch; -webkit-flex-basis: 0; -ms-flex-preferred-size: 0; flex-basis: 0; -webkit-box-pack:center; -webkit-justify-content:center; -ms-flex-pack:center; justify-content:center;}
+.feature-description{ -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-align-self: stretch; -ms-flex-item-align: stretch; align-self: stretch; -webkit-flex-basis: 0; -ms-flex-preferred-size: 0; flex-basis: 0; -webkit-box-pack:center; -webkit-justify-content:center; -ms-flex-pack:center; justify-content:center; padding: 10px;}
 
 /**-------------第三个页面-----------*/
 
@@ -497,3 +516,8 @@ a:hover {  font-weight: 400;  color: #DADADA;  text-decoration: none; }
 position: fixed 相对于浏览器 absolute 父容器;
 */
 #android-robot{ position: fixed ; left:100%; bottom: 0%;  -webkit-transform: translate(-50%,50%)  rotate(-45deg);  transform: translate(-50%,50%)  rotate(-45deg); }
+
+
+
+
+
